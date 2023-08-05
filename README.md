@@ -11,8 +11,14 @@ This is a publicly available dataset associated with our paper 'Weakly Supervise
 ## Link
 Please send an email to yiwenhuang21@m.fudan.edu.cn with a **signed agreement** before gaining access to this dataset.
 
-- Baidu Netdisk: Coming Soon~ (key：Coming Soon~)
+- Baidu Netdisk: https://pan.baidu.com/s/1DRCEeKDUseEtXbV7jJJs4A (key：jpxc)
 - Google Cloud: Coming Soon~
+
+## Usage
+
+```
+cat SC-IMAGENET.tar.gz.part.* > SC-IMAGENET.tar.gz
+```
 
 ## Cite
 Coming Soon~
