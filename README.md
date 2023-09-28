@@ -21,4 +21,13 @@ cat SC-IMAGENET.tar.gz.part.* > SC-IMAGENET.tar.gz
 ```
 
 ## Cite
-Coming Soon~
+```
+@InProceedings{Huang_2023_ICCV,
+    author    = {Huang, Yiwen and Sun, Yixuan and Lai, Chenghang and Xu, Qing and Wang, Xiaomei and Shen, Xuli and Ge, Weifeng},
+    title     = {Weakly Supervised Learning of Semantic Correspondence through Cascaded Online Correspondence Refinement},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {16254-16263}
+}
+```
