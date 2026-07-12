@@ -12,13 +12,7 @@ This is a publicly available dataset associated with our paper 'Weakly Supervise
 Please send an email to yiwenhuang21@m.fudan.edu.cn with a **signed agreement** before gaining access to this dataset.
 
 - Baidu Netdisk: https://pan.baidu.com/s/1DRCEeKDUseEtXbV7jJJs4A (key: jpxc)
-- Google Cloud: Coming Soon~
-
-## Usage
-
-```
-cat SC-IMAGENET.tar.gz.part.* > SC-IMAGENET.tar.gz
-```
+- Google Cloud: https://drive.google.com/file/d/1J0iZqcKWDttoJlpc0DwJH9NbX5L3dS8h/view?usp=sharing
 
 ## Cite
 ```
