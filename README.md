@@ -14,6 +14,55 @@ Please send an email to yiwenhuang21@m.fudan.edu.cn with a **signed agreement** 
 - Baidu Netdisk: https://pan.baidu.com/s/1DRCEeKDUseEtXbV7jJJs4A (key: jpxc)
 - Google Cloud: https://drive.google.com/file/d/1J0iZqcKWDttoJlpc0DwJH9NbX5L3dS8h/view?usp=sharing
 
+## Data Organization
+
+Extract the SC-ImageNet annotations and split lists into `SC-IMAGENET`.
+Download the matching ImageNet images separately and organize the data as follows:
+
+```text
+<datapath>/SC-IMAGENET/
+    Layout/large/trn.txt
+    Layout/large/val.txt
+    PairAnnotation/trn/<pair_id>.json
+    PairAnnotation/val/<pair_id>.json
+    JPEGImages/<category>/<category>_<image_id>.JPEG
+```
+
+The directory name `SC-IMAGENET` is case-sensitive on Linux.
+For example, `JPEGImages/n02138441/n02138441_2292.JPEG` is an image path.
+
+The provided CATs code expects `SC-ImageNet`, while DHPF expects `SC-IMAGENET`.
+On Linux, create a symbolic link so both names point to the same dataset:
+
+```bash
+ln -s SC-IMAGENET "<datapath>/SC-ImageNet"
+```
+
+Replace `<datapath>` with your dataset parent directory. The `SC-ImageNet` link path must not already exist.
+
+If you already have the full ImageNet images extracted into category directories with the filenames shown above, link that image directory to `JPEGImages` to reuse the images without copying them:
+
+```bash
+ln -s "/absolute/path/to/imagenet/images" "<datapath>/SC-IMAGENET/JPEGImages"
+```
+
+Replace `/absolute/path/to/imagenet/images` with the absolute path to the directory containing the category folders, such as `n02138441/`. The `JPEGImages` link path must not already exist. Keep `Layout` and `PairAnnotation` from SC-ImageNet in `SC-IMAGENET`.
+
+## Using SC-ImageNet with CATs and DHPF
+
+Copy the contents of `./CATs/` into the root of the original CATs project, or the contents of `./DHPF/` into the root of the original DHPF project. Preserve the directory structure and replace the corresponding files with the provided versions.
+
+Follow the original project's installation instructions. To use SC-ImageNet, select `--benchmark imagenet` and set `--datapath` to the parent directory containing `SC-IMAGENET`. For CATs, also create the `SC-ImageNet` symbolic link described above.
+
+## Model Weights
+
+The SC-ImageNet column provides weights pretrained on SC-ImageNet. The SPair-71k column provides weights pretrained on SC-ImageNet and then fine-tuned on SPair-71k.
+
+| Model | SC-ImageNet | SPair-71k |
+| --- | --- | --- |
+| CATs | [Google Drive](https://drive.google.com/drive/folders/1ANCg93djd3cyRye64jzrUDqjm3vLQrku?usp=sharing) | [Google Drive](https://drive.google.com/drive/folders/1QO5YMuA9KdfNFeREEhvTwaNXtb9nW67_?usp=sharing) |
+| DHPF | [Google Drive](https://drive.google.com/drive/folders/1zF3ZiUgGpiFjCEohJ8wpX1HBK6VVGjWE?usp=sharing) | [Google Drive](https://drive.google.com/drive/folders/1cWDAuUAnCGPCbwoyCTKSFBGjs0lhWrCx?usp=sharing) |
+
 ## Cite
 ```
 @InProceedings{Huang_2023_ICCV,
