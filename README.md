@@ -45,11 +45,11 @@ ln -s "/absolute/path/to/imagenet/images" "<datapath>/SC-IMAGENET/JPEGImages"
 
 Replace `/absolute/path/to/imagenet/images` with the absolute path to the directory containing the category folders, such as `n02138441/`. The `JPEGImages` link path must not already exist. Keep `Layout` and `PairAnnotation` from SC-ImageNet in `SC-IMAGENET`.
 
-## Using SC-ImageNet with CATs and DHPF
+## Repository Setup
 
-Copy the contents of `./CATs/` into the root of the original CATs project, or the contents of `./DHPF/` into the root of the original DHPF project. 
+Copy the files from the corresponding directory into the root of the original repository, preserving the directory structure and replacing the matching files where necessary.
 
-Preserve the directory structure and replace the corresponding files with the provided versions. Follow the original project's installation instructions. 
+Then, follow the installation and setup instructions provided by the original project.
 
 To use SC-ImageNet, select `--benchmark imagenet` and set `--datapath` to the parent directory containing `SC-IMAGENET`. 
 
