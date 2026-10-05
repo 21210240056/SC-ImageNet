@@ -17,6 +17,7 @@ Please send an email to yiwenhuang21@m.fudan.edu.cn with a **signed agreement** 
 ## Data Organization
 
 Extract the SC-ImageNet annotations and split lists into `SC-IMAGENET`.
+
 Download the matching ImageNet images separately and organize the data as follows:
 
 ```text
@@ -33,6 +34,7 @@ The directory name `SC-IMAGENET` is case-sensitive on Linux.
 For example, `JPEGImages/n02138441/n02138441_2292.JPEG` is an image path.
 
 The provided CATs code expects `SC-ImageNet`, while DHPF expects `SC-IMAGENET`.
+
 On Linux, create a symbolic link so both names point to the same dataset:
 
 ```bash
