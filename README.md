@@ -51,7 +51,7 @@ Copy the contents of `./CATs/` into the root of the original CATs project, or th
 
 Preserve the directory structure and replace the corresponding files with the provided versions. Follow the original project's installation instructions. 
 
-To use SC-ImageNet, select `--benchmark imagenet` and set `--datapath` to the parent directory containing `SC-IMAGENET`. For CATs, also create the `SC-ImageNet` symbolic link described above.
+To use SC-ImageNet, select `--benchmark imagenet` and set `--datapath` to the parent directory containing `SC-IMAGENET`. 
 
 ## Model Weights
 
