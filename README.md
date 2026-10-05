@@ -29,12 +29,6 @@ Download the matching ImageNet images separately and organize the data as follow
     JPEGImages/<category>/<category>_<image_id>.JPEG
 ```
 
-The directory name `SC-IMAGENET` is case-sensitive on Linux.
-
-For example, `JPEGImages/n02138441/n02138441_2292.JPEG` is an image path.
-
-The provided CATs code expects `SC-ImageNet`, while DHPF expects `SC-IMAGENET`.
-
 On Linux, create a symbolic link so both names point to the same dataset:
 
 ```bash
@@ -53,13 +47,17 @@ Replace `/absolute/path/to/imagenet/images` with the absolute path to the direct
 
 ## Using SC-ImageNet with CATs and DHPF
 
-Copy the contents of `./CATs/` into the root of the original CATs project, or the contents of `./DHPF/` into the root of the original DHPF project. Preserve the directory structure and replace the corresponding files with the provided versions.
+Copy the contents of `./CATs/` into the root of the original CATs project, or the contents of `./DHPF/` into the root of the original DHPF project. 
 
-Follow the original project's installation instructions. To use SC-ImageNet, select `--benchmark imagenet` and set `--datapath` to the parent directory containing `SC-IMAGENET`. For CATs, also create the `SC-ImageNet` symbolic link described above.
+Preserve the directory structure and replace the corresponding files with the provided versions. Follow the original project's installation instructions. 
+
+To use SC-ImageNet, select `--benchmark imagenet` and set `--datapath` to the parent directory containing `SC-IMAGENET`. For CATs, also create the `SC-ImageNet` symbolic link described above.
 
 ## Model Weights
 
-The SC-ImageNet column provides weights pretrained on SC-ImageNet. The SPair-71k column provides weights pretrained on SC-ImageNet and then fine-tuned on SPair-71k.
+The SC-ImageNet column provides weights pretrained on SC-ImageNet. 
+
+The SPair-71k column provides weights pretrained on SC-ImageNet and then fine-tuned on SPair-71k.
 
 | Model | SC-ImageNet | SPair-71k |
 | --- | --- | --- |
