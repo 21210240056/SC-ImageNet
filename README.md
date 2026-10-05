@@ -29,6 +29,7 @@ Download the matching ImageNet images separately and organize the data as follow
 ```
 
 The directory name `SC-IMAGENET` is case-sensitive on Linux.
+
 For example, `JPEGImages/n02138441/n02138441_2292.JPEG` is an image path.
 
 The provided CATs code expects `SC-ImageNet`, while DHPF expects `SC-IMAGENET`.
